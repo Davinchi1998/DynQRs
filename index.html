@@ -16,18 +16,22 @@
         justify-content: center;
         align-items: center;
         height: 100vh;
+        overflow: hidden;
       }
 
       h1 {
-        font-size: 8em; /* Tamaño aumentado para "Florentia" */
-        margin: 0;
+        font-size: 3em; /* Tamaño reducido para "Florentia" */
         font-weight: bold;
+        position: absolute;
+        bottom: 20px;
       }
 
       h2 {
-        font-size: 4em; /* Tamaño para la frase */
-        margin-top: 10px; /* Espacio entre el título y la frase */
-        font-weight: 300; /* Opcional: un peso de fuente más ligero */
+        font-size: 2em; /* Tamaño para la frase */
+        margin: 0; /* Sin espacio superior */
+        font-weight: 300; /* Peso de fuente ligero */
+        text-align: center;
+        max-width: 90%; /* Asegura que la frase no se salga de la pantalla */
       }
 
       .lds-ring {
@@ -35,7 +39,7 @@
         position: relative;
         width: 80px;
         height: 80px;
-        margin-top: 20px; /* Añadido espacio entre la frase y el loader */
+        margin-top: 20px; /* Espacio entre la frase y el loader */
       }
       .lds-ring div {
         box-sizing: border-box;
@@ -69,9 +73,9 @@
   </style>
 </head>
 <body>
-  <h1>Florentia</h1>
-  <h2> Hoy es un gran día para florecer </h2>
+  <h2>Las delicias son de aquí, pero las flores las consigues en Florentia.</h2>
   <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+  <h1>Florentia</h1>
   <script>
     const AS_URL_BASE = "https://script.google.com/macros/s/AKfycbwzvRP3KCj_ZtMsp1Wt-UJy-2xNn_hTY02-r7D5g0xFiIjQf0eowbNWzny9AKM9MSkQFA/exec";
     var url = document.location.href;
@@ -91,4 +95,3 @@
   </script>
 </body>
 </html>
-
